@@ -1,0 +1,64 @@
+{
+  "epochs_requested": 5,
+  "epochs_completed": 5,
+  "best_epoch_by_val_loss": 4,
+  "total_training_time_seconds": 402.19,
+  "class_names": [
+    "Tomato_Bacterial_spot",
+    "Tomato_Early_blight",
+    "Tomato_Late_blight",
+    "Tomato_Leaf_Mold",
+    "Tomato_healthy"
+  ],
+  "train_class_counts": {
+    "Tomato_Bacterial_spot": 1489,
+    "Tomato_Early_blight": 700,
+    "Tomato_Late_blight": 1336,
+    "Tomato_Leaf_Mold": 666,
+    "Tomato_healthy": 1114
+  },
+  "class_weights": {
+    "Tomato_Bacterial_spot": 0.712558764271323,
+    "Tomato_Early_blight": 1.5157142857142858,
+    "Tomato_Late_blight": 0.7941616766467066,
+    "Tomato_Leaf_Mold": 1.593093093093093,
+    "Tomato_healthy": 0.952423698384201
+  },
+  "history": {
+    "accuracy": [
+      0.6987747550010681,
+      0.8548539280891418,
+      0.8801131248474121,
+      0.8965127468109131,
+      0.9014137387275696
+    ],
+    "loss": [
+      0.8311832547187805,
+      0.4492165744304657,
+      0.36582472920417786,
+      0.3163225054740906,
+      0.30660855770111084
+    ],
+    "val_accuracy": [
+      0.864555835723877,
+      0.8839049935340881,
+      0.904133677482605,
+      0.9173262715339661,
+      0.9014951586723328
+    ],
+    "val_loss": [
+      0.42882347106933594,
+      0.3321669399738312,
+      0.28713005781173706,
+      0.2665431499481201,
+      0.27330827713012695
+    ],
+    "learning_rate": [
+      0.0010000000474974513,
+      0.0010000000474974513,
+      0.0010000000474974513,
+      0.0010000000474974513,
+      0.0010000000474974513
+    ]
+  }
+}

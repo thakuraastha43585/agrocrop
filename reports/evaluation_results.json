@@ -1,0 +1,100 @@
+{
+  "model_path": "models/crop_disease_model.keras",
+  "manifest_path": "data/processed/splits_manifest.csv",
+  "evaluation_split": "test",
+  "test_samples": 1137,
+  "test_loss": 0.25917625427246094,
+  "test_accuracy": 0.9076517150395779,
+  "macro_avg": {
+    "precision": 0.8911161670996195,
+    "recall": 0.8926202353855844,
+    "f1_score": 0.8889241512118774
+  },
+  "weighted_avg": {
+    "precision": 0.9072851499505241,
+    "recall": 0.9076517150395779,
+    "f1_score": 0.9054303055028462
+  },
+  "per_class_metrics": {
+    "Tomato_Bacterial_spot": {
+      "precision": 0.9467084639498433,
+      "recall": 0.9467084639498433,
+      "f1_score": 0.9467084639498433,
+      "support": 319
+    },
+    "Tomato_Early_blight": {
+      "precision": 0.8278688524590164,
+      "recall": 0.6733333333333333,
+      "f1_score": 0.7426470588235294,
+      "support": 150
+    },
+    "Tomato_Late_blight": {
+      "precision": 0.9236363636363636,
+      "recall": 0.8850174216027874,
+      "f1_score": 0.9039145907473309,
+      "support": 287
+    },
+    "Tomato_Leaf_Mold": {
+      "precision": 0.8203592814371258,
+      "recall": 0.958041958041958,
+      "f1_score": 0.8838709677419355,
+      "support": 143
+    },
+    "Tomato_healthy": {
+      "precision": 0.937007874015748,
+      "recall": 1.0,
+      "f1_score": 0.967479674796748,
+      "support": 238
+    }
+  },
+  "class_names": [
+    "Tomato_Bacterial_spot",
+    "Tomato_Early_blight",
+    "Tomato_Late_blight",
+    "Tomato_Leaf_Mold",
+    "Tomato_healthy"
+  ],
+  "confusion_matrix": [
+    [
+      302,
+      6,
+      2,
+      7,
+      2
+    ],
+    [
+      14,
+      101,
+      17,
+      9,
+      9
+    ],
+    [
+      2,
+      13,
+      254,
+      14,
+      4
+    ],
+    [
+      1,
+      2,
+      2,
+      137,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      238
+    ]
+  ],
+  "classification_report": "                       precision    recall  f1-score   support\n\nTomato_Bacterial_spot     0.9467    0.9467    0.9467       319\n  Tomato_Early_blight     0.8279    0.6733    0.7426       150\n   Tomato_Late_blight     0.9236    0.8850    0.9039       287\n     Tomato_Leaf_Mold     0.8204    0.9580    0.8839       143\n       Tomato_healthy     0.9370    1.0000    0.9675       238\n\n             accuracy                         0.9077      1137\n            macro avg     0.8911    0.8926    0.8889      1137\n         weighted avg     0.9073    0.9077    0.9054      1137\n",
+  "figures": {
+    "confusion_matrix": "reports/figures/confusion_matrix.png",
+    "training_accuracy": "reports/figures/training_accuracy.png",
+    "training_loss": "reports/figures/training_loss.png"
+  }
+}
